@@ -1,8 +1,50 @@
-document.getElementById('comandeBtn').addEventListener('click', function() {
-    // Redirigir al cliente al formulario de Google Forms
-    window.location.href = "https://forms.gle/GCAPX1TLrq6n3owH7";
-});
+document.addEventListener("DOMContentLoaded", function() {
+    // Asignamos eventos a cada botón
+    document.getElementById('comandeBtn1').addEventListener('click', function() {
+        window.location.href = this.getAttribute('data-url');
+    });
 
-// Cuando el formulario es enviado, el redireccionamiento será manejado automáticamente por Google Forms.
-// No se necesita código adicional aquí para manejar el retorno al sitio web, ya que Google Forms generalmente redirige
-// al usuario a una página de agradecimiento o vuelve a cargar el sitio automáticamente después de completar el formulario.
+    document.getElementById('comandeBtn2').addEventListener('click', function() {
+        window.location.href = this.getAttribute('data-url');
+    });
+
+    document.getElementById('comandeBtn3').addEventListener('click', function() {
+        window.location.href = this.getAttribute('data-url');
+    });
+
+    document.getElementById('comandeBtn4').addEventListener('click', function() {
+        window.location.href = this.getAttribute('data-url');
+    });
+
+    document.getElementById('comandeBtn5').addEventListener('click', function() {
+        window.location.href = this.getAttribute('data-url');
+    });
+
+    document.getElementById('comandeBtn6').addEventListener('click', function() {
+        window.location.href = this.getAttribute('data-url');
+    });
+
+    document.getElementById('comandeBtn7').addEventListener('click', function() {
+        window.location.href = this.getAttribute('data-url');
+    });
+
+    document.getElementById('comandeBtn8').addEventListener('click', function() {
+        window.location.href = this.getAttribute('data-url');
+    });
+
+    document.getElementById('comandeBtn9').addEventListener('click', function() {
+        window.location.href = this.getAttribute('data-url');
+    });
+
+    document.getElementById('comandeBtn10').addEventListener('click', function() {
+        window.location.href = this.getAttribute('data-url');
+    });
+
+    document.getElementById('comandeBtn11').addEventListener('click', function() {
+        window.location.href = this.getAttribute('data-url');
+    });
+
+    document.getElementById('comandeBtn12').addEventListener('click', function() {
+        window.location.href = this.getAttribute('data-url');
+    });
+});
