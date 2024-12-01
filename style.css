@@ -1,102 +1,89 @@
-/* Reset de márgenes y padding */
-* {
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Fondo y tipografía general */
-body {
-    font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
     color: #333;
-    line-height: 1.6;
 }
 
-/* Contenedor principal */
 .container {
-    width: 80%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    text-align: center;
 }
 
-/* Título */
 h1 {
-    font-size: 2.5rem;
-    color: #2c3e50;
-    margin-bottom: 40px;
+    text-align: center;
+    color: #444;
+    margin-bottom: 20px;
 }
 
-/* Contenedor de los productos */
+h2 {
+    color: #555;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* Product Grid */
 .productos {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
-/* Estilo de cada producto */
 .producto {
-    background-color: white;
+    background-color: #fff;
+    border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 15px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .producto:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 .producto img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
+    border-radius: 4px;
+    margin-bottom: 10px;
 }
 
 .producto p {
-    font-size: 1.1rem;
-    color: #34495e;
+    margin: 5px 0;
+    font-size: 16px;
+    color: #666;
 }
 
-.producto p:last-child {
+.producto p:nth-child(3) {
     font-weight: bold;
-    color: #e74c3c;
+    color: #000;
 }
 
-/* Botón de "Comande" */
+/* Button */
 #comandeBtn {
-    background-color: #e74c3c;
-    color: white;
-    padding: 12px 30px;
-    font-size: 1.2rem;
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
 #comandeBtn:hover {
-    background-color: #c0392b;
-}
-
-/* Responsividad */
-@media (max-width: 768px) {
-    .productos {
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    #comandeBtn {
-        font-size: 1rem;
-        padding: 10px 20px;
-    }
+    background-color: #0056b3;
 }
