@@ -43,8 +43,25 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('comandeBtn11').addEventListener('click', function() {
         window.location.href = this.getAttribute('data-url');
     });
-
     document.getElementById('comandeBtn12').addEventListener('click', function() {
+        window.location.href = this.getAttribute('data-url');
+    });
+    document.getElementById('comandeBtn13').addEventListener('click', function() {
+        window.location.href = this.getAttribute('data-url');
+    });
+    document.getElementById('comandeBtn14').addEventListener('click', function() {
+        window.location.href = this.getAttribute('data-url');
+    });
+    document.getElementById('comandeBtn15').addEventListener('click', function() {
+        window.location.href = this.getAttribute('data-url');
+    });
+    document.getElementById('comandeBtn16').addEventListener('click', function() {
+        window.location.href = this.getAttribute('data-url');
+    });
+    document.getElementById('comandeBtn17').addEventListener('click', function() {
+        window.location.href = this.getAttribute('data-url');
+    });
+    document.getElementById('comandeBtn18').addEventListener('click', function() {
         window.location.href = this.getAttribute('data-url');
     });
 });
